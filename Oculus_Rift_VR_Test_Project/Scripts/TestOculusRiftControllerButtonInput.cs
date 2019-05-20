@@ -6,7 +6,7 @@ using UnityEngine.UI;
 /**
  * C# Script name: TestOculusRiftControllerButtonInput
  * Author: Ricardo Guerra
- * Updated: May 19, 2019
+ * Updated: May 20, 2019
  * 
  * Description: This is a C# Script made to test controller button input for the Oculus Rift
  *              controller buttons. When each of the buttons of the controllers are pressed,
@@ -115,7 +115,7 @@ public class TestOculusRiftControllerButtonInput : MonoBehaviour {
             }
         }
 
-        // If the user pressed the 'Start' button.
+        // If the user pressed the 'Start' button...
         if (OVRInput.GetDown(OVRInput.Button.Start))
         {
             // A log prints to the console saying that the 'Start' button was pressed.
@@ -128,7 +128,7 @@ public class TestOculusRiftControllerButtonInput : MonoBehaviour {
             resetGameObjects();
         }
 
-        // If the user pressed the 'Left Stick' button.
+        // If the user pressed the 'Left Stick' button...
         if (OVRInput.GetDown(OVRInput.Button.PrimaryThumbstick))
         {
             // A log prints to the console saying that the 'Left Stick' button was pressed.
@@ -141,7 +141,7 @@ public class TestOculusRiftControllerButtonInput : MonoBehaviour {
          * Oculus Rift, Right controller buttons: A, B, Right Stick.
          */
 
-        // If the user pressed the 'A' button.
+        // If the user pressed the 'A' button...
         if (OVRInput.GetDown(OVRInput.Button.One))
         {
             // A log prints to the console saying that the 'A' button was pressed.
@@ -156,7 +156,7 @@ public class TestOculusRiftControllerButtonInput : MonoBehaviour {
             else greenCube.SetActive(false);
         }
 
-        // If the user pressed the 'B' button.
+        // If the user pressed the 'B' button...
         if (OVRInput.GetDown(OVRInput.Button.Two))
         {
             // A log prints to the console saying that the 'B' button was pressed.
@@ -165,7 +165,7 @@ public class TestOculusRiftControllerButtonInput : MonoBehaviour {
             panelText.text = "You've pressed the 'B' button!";
         }
 
-        // If the user pressed the 'Right Stick' button.
+        // If the user pressed the 'Right Stick' button...
         if (OVRInput.GetDown(OVRInput.Button.SecondaryThumbstick))
         {
             // A log prints to the console saying that the 'Right Stick' button was pressed.
